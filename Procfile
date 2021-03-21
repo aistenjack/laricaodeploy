@@ -1,1 +1,1 @@
-web: gunicorn delivery_backend.wsgi
+web: gunicorn delivery_backend --log-file -
