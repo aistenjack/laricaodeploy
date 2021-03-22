@@ -9,9 +9,8 @@ https://docs.djangoproject.com/en/3.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
-
-from pathlib import Path
 from decouple import config
+from pathlib import Path
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -130,9 +129,6 @@ EMAIL_HOST_USER = ''
 EMAIL_HOST_PASSWORD = ''
 DEFAULT_FROM_EMAIL = 'aistenjack@gmail.com'
 
-LOGIN_URL="/login/"
-LOGOUT_URL="/logout/"
-LOGN_REDIRECT_URL="/"
 
 
 # Static files (CSS, JavaScript, Images)
