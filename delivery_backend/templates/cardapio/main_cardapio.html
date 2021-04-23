@@ -1,5 +1,5 @@
 
-{% extends 'index_cardapio.html' %}
+{% extends 'templates/cardapio/index_cardapio.html' %}
 {% load static %}
 
 {% block main %}
@@ -10,7 +10,7 @@
   </div>
 
       
-     {% include 'cardapio/classic-burger.html' %}
+     {% include 'templates/cardapio/classic_burger/classic-burger.html' %}
 
     	<div class="hidden-xs col-sm-1 col-md-1 bgCardapioPagina"></div>
 
@@ -23,7 +23,7 @@
 
 
 
-		{% include 'cardapio/menu.html' %}
+		{% include 'templates/cardapio/menu.html' %}
 
 
 

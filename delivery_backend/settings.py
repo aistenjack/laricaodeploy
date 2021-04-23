@@ -62,8 +62,17 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             'templates',
-            'delivery_backend/templates',
-            'delivery_backend/templates_cardapio'
+            'delivery_backend/templates/home',
+            'delivery_backend/templates/contato',
+            'delivery_backend/templates/fotos',
+            'delivery_backend/templates/servicos',
+            'delivery_backend/templates/cardapio',
+            'delivery_backend/templates/cardapio/classic_burger',
+            'delivery_backend/templates/cardapio/special_burger',
+            'delivery_backend/templates/cardapio/porcoes',
+            'delivery_backend/templates/cardapio/sobremesa',
+            'delivery_backend/templates/cardapio/bebidas',
+
         ],
 
         'APP_DIRS': True,
