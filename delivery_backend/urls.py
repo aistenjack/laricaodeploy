@@ -22,7 +22,7 @@ from .views import  classic_burger, special_burger, porcoes, sobremesas, bebidas
 
 
 urlpatterns = [
-    path('/', home, name='home'),
+    path('', home, name='home'),
     path('Catalogo/', include('catalog.url', namespace='catalog')),
     path('Cardapio/', cardapio, name='cardapio'),
     path('Servicos/', servicos, name='servicos'),
