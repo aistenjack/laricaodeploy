@@ -26,15 +26,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-import socket
-
-if socket.gethostname() == "laricaolanches.herokuapp.com":
-    DEBUG = False
-    ALLOWED_HOSTS = ["laricaolanches.herokuapp.com", "www.laricaolanches.com.br"]
-
-else:
-    DEBUG = True
-    ALLOWED_HOSTS = ["localhost", "127.0.0.1",]
 
 #ALLOWED_HOSTS = ['*']
 
