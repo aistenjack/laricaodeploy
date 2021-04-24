@@ -30,7 +30,7 @@ import socket
 
 if socket.gethostname() == "laricaolanches.herokuapp.com":
     DEBUG = False
-    ALLOWED_HOSTS = ["*",]
+    ALLOWED_HOSTS = ["laricaolanches.herokuapp.com",]
 
 else:
     DEBUG = True
