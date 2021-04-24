@@ -61,7 +61,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            'templates',
+            'delivery_backend/templates',
             'delivery_backend/templates/home',
             'delivery_backend/templates/contato',
             'delivery_backend/templates/fotos',
