@@ -14,6 +14,7 @@ from dj_database_url import parse as dburl
 from pathlib import Path
 
 import os
+import socket
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,14 +27,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-import socket
 
-if socket.gethostname() == "laricaolanches.herokuapp.com":
+
+if socket.gethostname() == "https://laricaolanches.herokuapp.com/":
     DEBUG = False
-    ALLOWED_HOSTS = ["laricaolanches.herokuapp.com", "www.laricaolanches.com.br"]
+    ALLOWED_HOSTS = ["https://laricaolanches.herokuapp.com/", "https://www.laricaolanches.com.br/"]
 
 else:
-    DEBUG = False
+    DEBUG = True
     ALLOWED_HOSTS = ["localhost", "127.0.0.1",]
 
 #ALLOWED_HOSTS = ['*']
