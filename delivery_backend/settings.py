@@ -71,7 +71,7 @@ TEMPLATES = [
             'templates/cardapio/special_burger',
             'templates/cardapio/porcoes',
             'templates/cardapio/sobremesa',
-            'templates/cardapio/bebidas',
+            'templates/cardapio/bebidas'
 
         ],
 
