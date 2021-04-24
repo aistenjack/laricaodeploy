@@ -1,8 +1,8 @@
-{% extends 'templates/home/base.html' %}
+{% extends 'home/base.html' %}
 
 {% block main %}
-	{% include 'templates/home/head.html' %}
-	{% include 'templates/home/header.html' %}
+	{% include 'home/head.html' %}
+	{% include 'home/header.html' %}
 <!-- ################################################################################################################################################################ -->
 
 
@@ -18,7 +18,7 @@
   </div>
 
       
-     {% include 'templates/cardapio/special_burger/special-burger.html' %}
+     {% include 'cardapio/special_burger/special-burger.html' %}
 
       <div class="hidden-xs col-sm-1 col-md-1 bgCardapioPagina"></div>
 
@@ -31,7 +31,7 @@
 
 
 
-		{% include 'templates/cardapio/menu.html' %}
+		{% include 'cardapio/menu.html' %}
 
 
 
@@ -60,6 +60,6 @@
 
 
 <!-- ################################################################################################################################################################ -->
-	{% include 'templates/home/footer.html' %}
+	{% include 'home/footer.html' %}
 
 {% endblock %}
