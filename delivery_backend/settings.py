@@ -26,7 +26,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ['*']
+COMPRESS_ENABLED = os.environ.get('COMPRESS_ENABLED', False)
+
+ALLOWED_HOSTS = ['*', 'localhost']
 
 
 # Application definition
