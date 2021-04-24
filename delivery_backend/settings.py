@@ -28,7 +28,7 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 
 COMPRESS_ENABLED = os.environ.get('COMPRESS_ENABLED', False)
 
-ALLOWED_HOSTS = ['*', 'localhost']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
