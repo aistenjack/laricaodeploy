@@ -71,7 +71,7 @@ TEMPLATES = [
             'delivery_backend/templates/cardapio/special_burger',
             'delivery_backend/templates/cardapio/porcoes',
             'delivery_backend/templates/cardapio/sobremesa',
-            'delivery_backend/templates/cardapio/bebidas'
+            'delivery_backend/templates/cardapio/bebidas',
 
         ],
 
